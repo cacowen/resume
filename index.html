@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0.5in;
+        max-width: 11in;
+        margin: 0 auto;
+      }
+      img {
+        height: 1em;
+        width: 2em;
+        object-fit: contain;
+        padding-right: 0.5em;
+        line-height: 1em;
+        vertical-align: middle;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+      ul > li > ul {
+        padding-left: 0.5em;
+      }
+      li {
+        list-style: none;
+      }
+      a span {
+        padding-left: 1em;
+      }
+      a,
+      a:visited {
+        color: inherit;
+      }
+      header {
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-bottom: .25em;
+      }
+      header ul li,
+      .skills ul li {
+        display: inline;
+        padding-right: 0.5em;
+        white-space: nowrap;
+      }
+      .skills img {
+        padding: 0;
+      }
+      h3 {
+        margin-bottom: 0;
+      }
+      .experience img {
+        height: 1.5em;
+        width: auto;
+      }
+      .experience h4 {
+        text-align: right;
+        margin-top: -1.5em;
+      }
+      .experience ul {
+        padding: 0.25em 0.25em 0 2em;
+      }
+      .experience ul li {
+        list-style-type: disc;
+      }
+      .education img {
+        height: 2em;
+        width: auto;
+      }
+      .education-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
+      }
+      .education-card {
+        width: 30%;
+        margin-top: 0.5em;
+        padding: 0.5em;
+        text-align: center;
+      }
+      .education-card h4,
+      .education-card h5 {
+        margin: 0;
+      }
+      .education-card p {
+        text-align: left;
+      }
+      .skill-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+      }
+      p {
+        padding: 0 0.25em 0 1em;
+        margin-top: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Christopher Cowen</h1>
+      <section>
+        <h2>Sr. Software Engineer</h2>
+        <ul>
+          <li>
+            <a href="mailto:cacowen@gmail.com"><img src="./icons/email.png" alt="" />cacowen@gmail.com</a>
+          </li>
+          <li>
+            <a href="tel:5735766239"><img src="./icons/phone.png" alt="" />(573) 576-6239</a>
+          </li>
+          <li>
+            <a href="https://www.github.com/cacowen" target="_blank" rel="noopener noreferrer"
+              ><img src="./icons/github.png" alt="" />github.com/cacowen</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/cacowen" target="_blank" rel="noopener noreferrer"
+              ><img src="./icons/linkedin.png" alt="" />linkedin.com/in/cacowen</a
+            >
+          </li>
+        </ul>
+      </section>
+    </header>
+    <section class="skills">
+      <div class="skill-wrapper">
+        <section>
+          <h3>Languages</h3>
+          <ul>
+            <li><img src="./icons/csharp.png" alt="" />C#</li>
+            <li><img src="./icons/mssql.png" alt="" />SQL</li>
+            <li><img src="./icons/dynamo.png" alt="" />NoSql</li>
+            <li><img src="./icons/html.png" alt="" />HTML</li>
+            <li><img src="./icons/css.png" alt="" />CSS</li>
+            <li><img src="./icons/js.png" alt="" />JavaScript</li>
+            <li><img src="./icons/typescript.png" alt="" />TypeScript</li>
+            <li><img src="./icons/nodejs.png" alt="" />NodeJs</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Frameworks</h3>
+          <ul>
+            <li><img src="./icons/aspnet.png" alt="" />MVC</li>
+            <li><img src="./icons/blazor.png" alt="" />Blazor</li>
+            <li><img src="./icons/knockoutjs.png" alt="" />KnockoutJS</li>
+            <li><img src="./icons/angular.png" alt="" />Angular</li>
+            <li><img src="./icons/react.png" alt="" />React</li>
+            <li><img src="./icons/vuejs.png" alt="" />VueJS</li>
+            <li><img src="./icons/telerik.png" alt="" />Kendo UI</li>
+            <li><img src="./icons/bootstrap.png" alt="" />Bootstrap</li>
+            <li><img src="./icons/docker.png" alt="" />Docker</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Services</h3>
+          <ul>
+            <li><img src="./icons/aws.png" alt="" />AWS</li>
+            <li><img src="./icons/lambda.png" alt="" />Lambda</li>
+            <li><img src="./icons/cognito.png" alt="" />Cognito</li>
+            <li><img src="./icons/dynamo.png" alt="" />DynamoDB</li>
+            <li><img src="./icons/s3.png" alt="" />S3</li>
+            <!-- <li><img src="./icons/codecommit.png" alt="" />CodeCommit</li> -->
+            <li><img src="./icons/codedeploy.png" alt="" />CodeDeploy</li>
+            <li><img src="./icons/azure.png" alt="" />Azure</li>
+            <li><img src="./icons/devops.png" alt="" />DevOps</li>
+            <li><img src="./icons/github.png" alt="" />Github</li>
+            <li><img src="./icons/jira.png" alt="" />Jira (Agile)</li>
+            <li><img src="./icons/jenkins.png" alt="" />Jenkins</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+    <section class="experience">
+      <h2>Experience</h2>
+      <section>
+        <h3>
+          <a href="https://www.defisolutions.com" target="_blank" rel="noopener noreferrer">
+            <img src="./icons/defi.png" alt="defiSOLUTIONS" />
+          </a>
+        </h3>
+        <h4>Sr. Software Engineer | Westlake, TX | April 2017 - Present</h4>
+        <ul>
+          <li>
+            Broke up a monolith application into multiple dockerized microservices with specific back-ends and modular
+            UIs.
+          </li>
+          <li>
+            Converted multiple Razor, Knockout, and Angular pages into React improving page load times and responsive
+            behavior.
+          </li>
+          <li>
+            Utilized AWS infrastructure: S3, DynamoDB, Lambda, Elasticsearch, Kubernetes, RDS to reduce server load and
+            increase performance.
+          </li>
+          <li>
+            Created CI/CD pipelines with Github and Jenkins for automatic deployments to various environments based on
+            branch naming.
+          </li>
+          <li>
+            Adopted Agile methodologies to quickly deliver high quality testable code. I was part of the best performing
+            team in the company.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>
+          <a href="https://www.assessmd.com" target="_blank" rel="noopener noreferrer">
+            <img src="./icons/amd.png" alt="AssessMD" />
+          </a>
+        </h3>
+        <h4>Sr. Software Engineer / Architect | McKinney, TX | March 2013 - March 2017</h4>
+        <ul>
+          <li>Lead developer and architect in a startup environment with only a handful of developers.</li>
+          <li>Made decisions on software and technology used in the system.</li>
+          <li>Played the role of Architect, DBA, Developer, Designer, Tester, and more.</li>
+          <li>Full stack workload from database, back-end APIs, front-end UIs to mobile apps and metric dashboards.</li>
+        </ul>
+      </section>
+      <section>
+        <h3>
+          <a href="https://www.insureon.com" target="_blank" rel="noopener noreferrer">
+            <img src="./icons/insureon.png" alt="Insureon" />
+          </a>
+        </h3>
+        <h4>Software Engineer | Allen, TX | April 2011 - February 2013</h4>
+        <ul>
+          <li>Created in-house software and tools used by insurance agents to fulfil clients' needs.</li>
+          <li>Built out the online application using newest technologies and practices.</li>
+          <li>
+            Integrated with big insurance carriers (The Hartford, Travelers, Philadelphia, Farmers, etc.) to get
+            real-time quotes for clients.
+          </li>
+          <li>Automated creation of standard insurance PDF documents on demand.</li>
+        </ul>
+      </section>
+    </section>
+    <section class="experience">
+      <h2>Other Side projects</h2>
+      <section>
+        <h3>
+          <a href="https://www.connectedmind.com" target="_blank" rel="noopener noreferrer">
+            <img src="./icons/cm.png" alt="ConnectedMind" />
+          </a>
+        </h3>
+        <p>
+          Helped to create and maintain a mental health assessment software package for this startup business. This
+          package is unique in that it uses a completely serverless approach via the AWS infrastructure with a CI/CD
+          pipeline using CodePipeline, lambda functions behind an API gateway for the endpoints, DynamoDB tables for
+          data storage, Cognito user pools for authentication, and S3 behind CloudFront for the UI using Blazor
+          applications. The application shrinks to nothing when not in use saving thousands of dollars and can instantly
+          scale on demand to accommodate millions of users.
+        </p>
+      </section>
+      <section>
+        <h3>
+          <a href="https://www.assessmd.com" target="_blank" rel="noopener noreferrer">
+            <img src="./icons/amd.png" alt="AssessMD" />
+          </a>
+        </h3>
+        <p>Continued work for AssessMD as needed maintaining client relationships, code maintenance, and training.</p>
+      </section>
+      <section>
+        <h3>
+          <a href="https://www.creditassociates.com" target="_blank" rel="noopener noreferrer">
+            <img src="./icons/ca.png" alt="CreditAssociates" />
+          </a>
+        </h3>
+        <p>
+          Helped to create special functionality for this Debt Relief platform as well as integrate the landing page
+          forms with Salesforce. Mostly created custom JavaScript/HTML/css widgets for use in their wordpress pages.
+        </p>
+      </section>
+      <section>
+        <h3>
+          <a href="https://www.optimalblue.com" target="_blank" rel="noopener noreferrer">
+            <img src="./icons/optimalblue.png" alt="Optimal Blue" />
+          </a>
+        </h3>
+        <p>
+          Worked with a team of contractors to move from outdated testing methods to automated regression, unit, and
+          integration tests for testing the large scale loan origination software package.
+        </p>
+      </section>
+    </section>
+    <section class="education">
+      <h2>Education</h2>
+      <section>
+        <h3><img src="./icons/semo.png" alt="Southeast Missouri State University" /></h3>
+        <div class="education-card-wrapper">
+          <div class="education-card">
+            <h4>Master of Science</h4>
+            <h5>Technology Management | 2006 - 2008</h5>
+            <p>Technology, Management, Education, Teaching, Training. I continued from my BS in Technology.</p>
+          </div>
+          <div class="education-card">
+            <h4>Bachelor of Science</h4>
+            <h5>Industrial Technology | 2004 - 2006</h5>
+            <p>Electronics, Engineering, Process Control. I continued from my AAS in Telecommunications.</p>
+          </div>
+          <div class="education-card">
+            <h4>Bachelor of Art</h4>
+            <h5>Philosophy | 2004 - 2006</h5>
+            <p>Religion, Logic, Ethics. I obtained this degree for fun.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
